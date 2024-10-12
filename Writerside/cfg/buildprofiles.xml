@@ -9,4 +9,23 @@
         </variables>
     </build-profile>
 
+    <variables>
+        <download-title>VIew SourceCode</download-title>
+        <download-page>https://github.com/MuCloudOfficial/MuCloudProjectDoc</download-page>
+        <showDownloadButton>true</showDownloadButton>
+
+        <custom-favicons>./icon.png</custom-favicons>
+        <header-logo>./icon.png</header-logo>
+    </variables>
+
+    <footer>
+        <social type="email" href="mailto:Mu_Cloud@outlook.de"/>
+        <social type="bilibili" href="https://space.bilibili.com/356101590"/>
+        
+        <link href="">Main Site</link>
+        <link href="">Mu_Cloud's Blog</link>
+        
+        <copyright>2019-2024 TwilightCloudPavilion</copyright>
+    </footer>
+    
 </buildprofiles>
