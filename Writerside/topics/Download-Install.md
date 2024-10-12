@@ -1,9 +1,9 @@
-# Download &amp; Install
+# 下载 &amp; 安装
 
-## Download
+## 下载
 
-[Click to Download from GitHub](https://mucloudofficial.github.io/resources/MK-JoinMessage/latest)
+[从 Github 下载](https://mucloudofficial.github.io/resources/MK-JoinMessage/latest)
 
-## Install
+## 安装
 
 Just Place Plugin to your "plugins" Folder in your Server Path

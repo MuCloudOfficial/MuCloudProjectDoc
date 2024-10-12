@@ -9,4 +9,22 @@
         </variables>
     </build-profile>
 
+    <variables>
+        <header-logo>../../resources/icon.png</header-logo>
+        <custom-favicons>../../resources/icon.png</custom-favicons>
+
+        <download-title>View SourceCode</download-title>
+        <download-page>https://www.github.com/MuCloudOfficial/MuCloudProjectDoc</download-page>
+        <showDownloadButton>true</showDownloadButton>
+    </variables>
+
+    <footer>
+        <social type="bilibili" href="https://space.bilibili.com/356101590"/>
+        <social type="blog" href="https://mucloudofficial.github.io/MuBlog"/>
+
+        <link href="https://www.jetbrains.com">WriterSide Designed by Jetbrains</link>
+
+        <copyright>2019-2024 Twilight Cloud Pavilion</copyright>
+    </footer>
+
 </buildprofiles>

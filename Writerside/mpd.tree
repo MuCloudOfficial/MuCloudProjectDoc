@@ -7,6 +7,7 @@
                  start-page="MK-Series.md">
 
     <toc-element topic="MK-Series.md">
+        <toc-element topic="MK-MuMuBot.md"/>
         <toc-element topic="MK-Auth.md"/>
         <toc-element topic="MK-Cleaner.md"/>
         <toc-element topic="MK-JoinMessage-Main.md">
