@@ -6,4 +6,4 @@
 
 ## 安装
 
-Just Place Plugin to your "plugins" Folder in your Server Path
+只需要将插件本体放置入服务器的 **plugins** 文件夹中即可
