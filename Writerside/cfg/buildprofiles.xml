@@ -10,8 +10,8 @@
     </build-profile>
 
     <variables>
-        <header-logo>../../resources/icon.png</header-logo>
-        <custom-favicons>../../resources/icon.png</custom-favicons>
+        <header-logo>./icon.png</header-logo>
+        <custom-favicons>./icon.png</custom-favicons>
 
         <download-title>View SourceCode</download-title>
         <download-page>https://www.github.com/MuCloudOfficial/MuCloudProjectDoc</download-page>
