@@ -18,11 +18,13 @@
 
         <footer>
             <social type="bilibili" href="https://space.bilibili.com/356101590"/>
-            <social type="blog" href="https://mucloudofficial.github.io/MuBlog"/>
+            <social type="email" href="mailto:Mu_Cloud@outlook.de"/>
+            <social type="twitter" href="https://x.com/MuCloudOfficial"/>
 
-            <link href="https://www.jetbrains.com">WriterSide Designed by Jetbrains</link>
+            <link href="https://mucloudofficial.github.io/MuBlog">Mu Blog</link>
+            <link href="https://mucloudofficial.github.io">Mu_Cloud's Main Site</link>
 
-            <copyright>2019-2024 Twilight Cloud Pavilion</copyright>
+            <copyright>2019-2024 Twilight Cloud Pavilion | T.C.P Advanced Tech Ministry</copyright>
         </footer>
     </build-profile>
 
