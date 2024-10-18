@@ -14,6 +14,7 @@
         <toc-element topic="MK-JoinMessage.md">
             <toc-element topic="MK-JoinMessage_DownloadAndInstall.md"/>
             <toc-element topic="MK-JoinMessage_Configuration.md"/>
+            <toc-element topic="MK-JoinMessage_Commands.md"/>
         </toc-element>
         <toc-element topic="MK-MuLib.md"/>
         <toc-element topic="MK-MuMuBot.md"/>
