@@ -4,22 +4,23 @@
 
 <instance-profile id="mpd"
                  name="Mu_Cloud's Project Documents"
-                 start-page="MK-Series.md">
+                 start-page="Main.md">
 
+    <toc-element topic="Main.md"/>
     <toc-element topic="MK-Series.md">
         <toc-element topic="MK-Auth.md"/>
         <toc-element topic="MK-AutoReplant.md"/>
         <toc-element topic="MK-Cleaner.md"/>
-        <toc-element topic="MK-JoinMessage-Main.md">
-            <toc-element topic="MK-JoinMessage-DownloadAndInstall.md"/>
-            <toc-element topic="MK-JoinMessage-Configuration.md"/>
+        <toc-element topic="MK-JoinMessage.md">
+            <toc-element topic="MK-JoinMessage_DownloadAndInstall.md"/>
+            <toc-element topic="MK-JoinMessage_Configuration.md"/>
         </toc-element>
         <toc-element topic="MK-MuLib.md"/>
         <toc-element topic="MK-MuMuBot.md"/>
         <toc-element topic="MK-NullCMD.md"/>
     </toc-element>
-    <toc-element topic="EX-Series-Main.md"/>
-    <toc-element topic="XY-Series.md">
-        <toc-element topic="XY-FantasyI.md"/>
+    <toc-element topic="EX-Series.md"/>
+    <toc-element topic="RS-Series.md">
+        <toc-element topic="RS-FantasyI.md"/>
     </toc-element>
 </instance-profile>
