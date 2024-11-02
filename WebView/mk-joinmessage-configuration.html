@@ -1,0 +1,40 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#647A89"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-11-02T20:47:22.3044511"><title>配置 | Mu_Cloud's Project Documents</title><script type="application/json" id="virtual-toc-data">[{"id":"cyfa3y_3","level":0,"title":"关于配置文件的位置","anchor":"#cyfa3y_3"},{"id":"cyfa3y_4","level":0,"title":"关于配置文件","anchor":"#cyfa3y_4"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/icon.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="配置 | Mu_Cloud's Project Documents"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Mu_Cloud's Project Documents Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/mk-joinmessage-configuration.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="配置 | Mu_Cloud's Project Documents"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/mk-joinmessage-configuration.html#webpage",
+    "url": "writerside-documentation/mk-joinmessage-configuration.html",
+    "name": "配置 | Mu_Cloud's Project Documents",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Mu_Cloud's Project Documents Help"
+}</script><!-- End Schema.org --></head><body data-id="MK-JoinMessage_Configuration" data-main-title="配置" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="MK-Series.md|MK Series | 暮空系列///MK-JoinMessage.md|MK-JoinMessage"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Mu_Cloud's Project Documents  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="MK-JoinMessage_Configuration" id="MK-JoinMessage_Configuration.md">配置</h1><section class="chapter"><h2 id="cyfa3y_3" data-toc="cyfa3y_3">关于配置文件的位置</h2><p id="cyfa3y_5">插件生成的配置文件夹名称与插件名称相同，其内会存有本插件的配置文件</p><p id="cyfa3y_6">插件的配置形式分为 SQLITE 与 YAML 两种形式， <span class="control" id="cyfa3y_9">其中 SQLITE 为默认配置形式</span></p><p id="cyfa3y_7">若插件处于 SQLITE 模式时，你可能会在插件配置文件夹中发现名为 <code class="code" id="cyfa3y_10">data.db</code> 的文件，此为本插件的所有存储信息， <span class="control" id="cyfa3y_11">非必要不要对该文件进行修改或删除</span></p><p id="cyfa3y_8">若插件处于 YAML 模式时，你将会在本插件的配置文件夹中发现两个配置文件，分别为 <code class="code" id="cyfa3y_12">config.yml</code> 和 <code class="code" id="cyfa3y_13">groups.yml</code>， <span class="control" id="cyfa3y_14">非必要不要删除这些文件</span></p></section><section class="chapter"><h2 id="cyfa3y_4" data-toc="cyfa3y_4">关于配置文件</h2><p id="cyfa3y_15">该栏仅适用于插件配置文件形式处于 YAML 模式状态，SQLITE 仅通过插件内置指令即可实现</p><div class="tabs" id="cyfa3y_16" data-anchors="[cyfa3y_17,cyfa3y_18]"><div class="tabs__content" data-gtm="tab" id="cyfa3y_17" data-title="config.yml"><div class="code-block" data-lang="yaml" data-title="yaml">
+            # 检查更新
+            check_update: false
+            # 设置配置文件形式，可以更改为 SQLITE 以启用 SQLITE 配置模式
+            config_type: YAML
+            # 设置消息提示类型: 可选项 &gt; CHAT | ACTIONBAR | BOSSBAR
+            show_type: CHAT
+            # 
+        </div></div><div class="tabs__content" data-gtm="tab" id="cyfa3y_18" data-title="groups.yml"><p><b id="cyfa3y_20">可以设置多个组，但 default 组不要删除</b></p><div class="code-block" data-lang="yaml" data-title="yaml">
+            groups:
+                # 该组为默认组，无法删除
+                default:
+                    # 优先级，值越大越优先采用
+                    priority: 0
+                    # 进服处在该组时发出的消息
+                    join: &quot;&amp;7[&amp;a+&amp;7] &amp;f{player}&quot;
+                    # 退服处在该组时发出的消息
+                    exit: &quot;&amp;7[&amp;4-&amp;7] &amp;f{player}&quot;
+                customGroup:
+                    priority: 1
+                    join: &quot;&amp;7[&amp;a+&amp;7] &amp;f{player}&quot;
+                    exit: &quot;&amp;7[&amp;4-&amp;7] &amp;f{player}&quot;
+                    # 在该组的用户，使用玩家名称存储
+                    members: []
+        </div></div></div></section><div class="last-modified">Last modified: 02 十一月 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="mk-joinmessage-downloadandinstall.html" class="navigation-links__prev">下载 &amp; 安装</a><a href="mk-joinmessage-commands.html" class="navigation-links__next">命令</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.js"></script></body></html>
