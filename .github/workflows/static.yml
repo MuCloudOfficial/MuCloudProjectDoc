@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  INSTANCE: 'MuCloudProjectDoc/mpd'
+  INSTANCE: 'Writerside/mpd'
   DOCKER_VERSION: '2025.03.8312'
   # IS_GROUP: 'true'  # Uncomment to build a group
 
