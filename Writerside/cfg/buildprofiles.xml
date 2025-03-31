@@ -5,8 +5,8 @@
 
     <build-profile instance="mpd">
         <variables>
-            <header-logo>./icon.jpg</header-logo>
-            <custom-favicons>./icon.jpg</custom-favicons>
+            <header-logo>./icon.png</header-logo>
+            <custom-favicons>./icon.png</custom-favicons>
 
             <download-title>View SourceCode</download-title>
             <download-page>https://www.github.com/MuCloudOfficial/MuCloudProjectDoc</download-page>
