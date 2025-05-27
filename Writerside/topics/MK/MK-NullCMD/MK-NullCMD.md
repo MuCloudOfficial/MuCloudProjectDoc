@@ -1,3 +1,0 @@
-# MK-NullCMD
-
-Start typing here...

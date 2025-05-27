@@ -1,3 +1,0 @@
-# RS-Series | 虹夏系列
-
-Start typing here...

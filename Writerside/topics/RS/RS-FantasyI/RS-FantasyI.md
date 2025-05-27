@@ -1,3 +1,0 @@
-# RS-FantasyI
-
-Start typing here...

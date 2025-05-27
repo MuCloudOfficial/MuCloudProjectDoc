@@ -1,3 +1,0 @@
-# MK-MuMuBot
-
-Start typing here...

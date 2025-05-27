@@ -1,3 +1,0 @@
-# MK-AutoReplant
-
-Start typing here...
