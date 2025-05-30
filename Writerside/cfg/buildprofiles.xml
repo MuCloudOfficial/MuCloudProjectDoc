@@ -13,7 +13,9 @@
             <showDownloadButton>true</showDownloadButton>
 
             <primary-color>metallic</primary-color>
-            <noindex-content>true</noindex-content>
+
+            <versions-switcher>https://mucloudofficial.github.io/MuCloudProjectDoc/versions.json</versions-switcher>
+            <noindex-content>false</noindex-content>
         </variables>
 
         <footer>
@@ -24,8 +26,7 @@
             <link href="https://mucloudofficial.github.io/MuBlog">Mu Blog</link>
             <link href="https://mucloudofficial.github.io">Mu_Cloud's Main Site</link>
 
-            <copyright>2019-2024 Twilight Cloud Pavilion | T.C.P Advanced Tech Ministry</copyright>
+            <copyright>2019-2025 Twilight Cloud Pavilion | T.C.P Advanced Tech Ministry</copyright>
         </footer>
     </build-profile>
-
 </buildprofiles>

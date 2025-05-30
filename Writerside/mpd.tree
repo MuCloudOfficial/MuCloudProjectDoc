@@ -4,7 +4,9 @@
 
 <instance-profile id="mpd"
                  name="Mu_Cloud's Project Documents"
-                 start-page="Main.md">
+                 start-page="Main.md"
+                 status="eap"
+>
 
     <toc-element topic="Main.md"/>
     <toc-element topic="MK-Series.md">
@@ -15,7 +17,12 @@
         </toc-element>
         <toc-element topic="mksl-main.md">
             <toc-element topic="mksl-install.md"/>
+            <toc-element toc-title="使用">
+                <toc-element topic="mksl-add-server.md"/>
+                <toc-element topic="mksl-server-manage.md"/>
+            </toc-element>
             <toc-element topic="mksl-apidoc.md"/>
+            <toc-element topic="mksl-websocket.md"/>
         </toc-element>
     </toc-element>
 </instance-profile>

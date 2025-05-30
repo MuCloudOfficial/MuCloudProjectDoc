@@ -26,13 +26,11 @@ MK-AutoReplant
 
 MK-Cleaner
 
-MK-MuLib
-
-MK-MuMuBot
+~~MK-MuLib~~ iLoveMu
 
 MK-NullCMD
 
 **RS-Series**
 
-RS-FantasyI
+RS-MuMuBot
 

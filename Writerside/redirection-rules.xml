@@ -6,16 +6,4 @@
         <accepts>page.html</accepts>
     </rule>
     -->
-    <rule id="394d543">
-        <description>Created after removal of "EX-Series | 扩展系列" from Mu_Cloud's Project Documents</description>
-        <accepts>EX-Series.html</accepts>
-    </rule>
-    <rule id="128a2150">
-        <description>Created after removal of "RS-FantasyI" from Mu_Cloud's Project Documents</description>
-        <accepts>RS-FantasyI.html</accepts>
-    </rule>
-    <rule id="2f169f7">
-        <description>Created after removal of "RS-Series | 虹夏系列" from Mu_Cloud's Project Documents</description>
-        <accepts>RS-Series.html</accepts>
-    </rule>
 </rules>
