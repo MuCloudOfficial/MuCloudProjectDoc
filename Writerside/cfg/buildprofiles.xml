@@ -23,10 +23,11 @@
             <social type="email" href="mailto:Mu_Cloud@outlook.de"/>
             <social type="twitter" href="https://x.com/MuCloudOfficial"/>
 
-            <link href="https://mucloudofficial.github.io/MuBlog">Mu Blog</link>
-            <link href="https://mucloudofficial.github.io">Mu_Cloud's Main Site</link>
+            <link href="https://blog.muverse.ltd">MuBlog</link>
+            <link href="https://mucloud.muverse.ltd">Mu_Cloud's Main Site</link>
+            <link href="https://muverse.ltd">MuVerse Website</link>
 
-            <copyright>2019-2025 Twilight Cloud Pavilion | T.C.P Advanced Tech Ministry</copyright>
+            <copyright>2019-2026 MuVerse · MuProject</copyright>
         </footer>
     </build-profile>
 </buildprofiles>

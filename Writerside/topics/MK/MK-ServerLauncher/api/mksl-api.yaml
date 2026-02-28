@@ -2,12 +2,14 @@ openapi: 3.1.0
 info:
   title: MK-ServerLauncher
   description: MK-ServerLauncher
-  version: VoidLad V1
+  version: "VoidLand V1"
   contact:
     name: Mu_Cloud
     email: Mu_Cloud@outlook.de
+
 servers:
-  - url: 'http://localhost:20038/api/v1'
+  - url: http://localhost:20038/api/v1
+
 paths:
   /server/list:
     get:
@@ -19,67 +21,24 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/MCJEServer'
+                type: object
+                $ref: '#/components/schemas/MuPacket'
+              example:
+                MP_ID: "mucore.muserver:list"
+                MP_DATA:
+                  serverList:
+                    - "MCS1"
+                    - "MCS2"
+                TSS: 1145141919810
 
 components:
   schemas:
-    AvailableType:
-      type: "object"
+    MuPacket:
+      type: object
       properties:
-        id:
-          type: "string"
-        name:
-          type: "string"
-        desc:
-          type: "string"
-        api:
-          type: "string"
-      required:
-        - "id"
-        - "name"
-        - "desc"
-        - "api"
-    JavaEnvironment:
-      type: "object"
-      properties:
-        name:
-          type: "string"
-        path:
-          type: "string"
-        version:
-          type: "string"
-          default: "Unknown"
-      required:
-        - "name"
-        - "path"
-        - "version"
-    Config:
-      type: "object"
-      properties: { }
-    MCJEServer:
-      type: "object"
-      properties:
-        name:
-          type: "string"
-        version:
-          type: "string"
-        type:
-          $ref: "#/components/schemas/AvailableType"
-        port:
-          type: "integer"
-          format: "int32"
-          default: "25565"
-        env:
-          $ref: "#/components/schemas/JavaEnvironment"
-        config:
-          $ref: "#/components/schemas/Config"
-        running:
-          type: "boolean"
-      required:
-        - "name"
-        - "version"
-        - "type"
-        - "port"
-        - "env"
-        - "config"
-        - "running"
+        MP_ID:
+          type: string
+        MP_DATA:
+          type: object
+        TSS:
+          type: number
