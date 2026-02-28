@@ -38,12 +38,17 @@ MuPacket ID 由类ID与操作名组合而来，形如 `类ID:操作名`
 | muview.muserver.config:del        | 在 MuView 中删除指定 MuServer 中的设置时传送的包                          |
 | muview.muserver:create            | 在 MuView 中创建 MuServer 时传送的包                                |
 | muview.muserver:modify            | 在 MuView 中更改 MuServer 设置时传送的包                              |
+| muview.muserver:remove            | 在 MuView 中删除 MuServer 时传送的包                                |
+| muview.muserver:start             | 在 MuView 中启动指定的 MuServer 时传送的包                             |
+| muview.muserver:restart           | 在 MuView 中重启指定的 MuServer 时传送的包                             |
+| muview.muserver:stop              | 在 MuView 中停止指定的 MuServer 时传送的包                             |
 | muview.muserver.console:send      | 在 MuView 中向指定 MuServer 发送指令                                |
 | muview.muserver.console:kick      | 在 MuView 中向指定 MuServer 快速踢出指定玩家                            |
 | muview.muserver.console:msg       | 在 MuView 中向指定 MuServer 快速发送消息给指定玩家                         |
 | muview.muserver.console:broadcast | 在 MuView 中向指定 MuServer 快速发送广播消息                            |
 | muview.muenv:create               | 在 MuView 中创建 MuEnv 时传送的包                                   |
-| muview.config:nodify              | 在 MView 中更改 MuCore 设置项时传送的包                                |
+| muview.muenv:remove               | 在 MuView 中移除 MuEnv 时传送的包                                   |
+| muview.config:modify              | 在 MuView 中更改 MuCore 设置项时传送的包                               |
 
 ### MuPacket Data {id="mupacket-data_1"}
 
