@@ -52,7 +52,8 @@ MuPacket ID 由类ID与操作名组合而来，形如 `类ID:操作名`
 
 ### MuPacket Data {id="mupacket-data_1"}
 
-MuPacket Data 是由 MuPacket 实现者自行约定的结构，无论结构如何变化，其本质仍是一个 `JsonObject`(MuPacket API) 和 `object/{}`(MuPacketAPI4TS)
+MuPacket Data 是由 MuPacket 实现者自行约定的结构  
+无论结构如何变化，其本质仍是一个 `JsonObject`(MuPacket API) 和 `object`(MuPacketAPI4TS)  
 
 #### MuPacket Data 结构一览表
 
