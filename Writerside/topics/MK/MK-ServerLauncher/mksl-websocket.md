@@ -21,7 +21,12 @@
 
 MuPacket ID 由类ID与操作名组合而来，形如 `类ID:操作名`
 
-#### MuPacket ID 目录 (MuCore)
+### MuPacket Data {id="mupacket-data_1"}
+
+MuPacket Data 是由 MuPacket 实现者自行约定的结构  
+无论结构如何变化，其本质仍是一个 `JsonObject`(MuPacket API) 或 `object`(MuPacketAPI4TS)
+
+## MuPacket ID 目录 (MuCore)
 
 | MuPacket ID                | Description                                                                   |
 |----------------------------|-------------------------------------------------------------------------------|
@@ -34,7 +39,7 @@ MuPacket ID 由类ID与操作名组合而来，形如 `类ID:操作名`
 | mucore.muenv:list          | 用于返回所有的环境                                                            |
 
 
-#### MuPacket ID 目录 (MuView)
+## MuPacket ID 目录 (MuView)
 
 | MuPacket ID            | Description                       |
 |------------------------|-----------------------------------|
@@ -42,17 +47,12 @@ MuPacket ID 由类ID与操作名组合而来，形如 `类ID:操作名`
 | muview.muserver:import | 用于传送引入服务器请求的包        |
 | muview.muenv:create    | 在 MuView 中创建 MuEnv 时传送的包 |
 
-### MuPacket Data {id="mupacket-data_1"}
 
-MuPacket Data 是由 MuPacket 实现者自行约定的结构  
-无论结构如何变化，其本质仍是一个 `JsonObject`(MuPacket API) 或 `object`(MuPacketAPI4TS)  
-
-#### MuPacket Data 结构一览表
+## MuPacket Data 结构一览表
 
 ***以 [MuPacket ID 目录](#mupacket-id_1) 顺序排列***
 
-##### mucore.internal:msg
-
+### mucore.internal:msg
 ```TYPESCRIPT
 {
     // 该消息的类型，这会影响在 MuView-FrontView 中 Toast 消息的表现
@@ -63,16 +63,14 @@ MuPacket Data 是由 MuPacket 实现者自行约定的结构
 }
 ```
 
-##### mucore.internal.config:all
-
+### mucore.internal.config:all
 ```TYPESCRIPT
 {
     // 尚未实现
 }
 ```
 
-##### mucore.muserver:info
-
+### mucore.muserver:info
 ```typescript
 {
     // 服务器 ID，这通常是一个 8 位字符串
@@ -104,7 +102,7 @@ MuPacket Data 是由 MuPacket 实现者自行约定的结构
 }
 ```
 
-##### mucore.muserver:list
+### mucore.muserver:list
 ```TypeScript
 [
     {
@@ -130,4 +128,25 @@ MuPacket Data 是由 MuPacket 实现者自行约定的结构
         status: number
     }
 ]
+```
+
+### mucore.muserver:status
+```TypeScript
+{
+    // 服务器 ID，这通常是一个 8 位字符串
+    // 如非特别指定，这通常是以符合该正则 [A-Z0-9]{,8} 生成的随机字符串
+    // 这通常是唯一值
+    MS_ID: string
+
+    // 服务器当前的状态，以数字标识
+    // 0 -> 正在创建
+    // 1 -> 已停止
+    // 2 -> 服务器正在执行启动前任务（MuTask）中
+    // 3 -> 正在运行
+    // 4 -> 正在停止
+    // 5 -> 重新启动中
+    // 6 -> 遇错重启中
+    // 7 -> 服务器连续报告了错误，被强行停止
+    MS_OP: number
+}
 ```
