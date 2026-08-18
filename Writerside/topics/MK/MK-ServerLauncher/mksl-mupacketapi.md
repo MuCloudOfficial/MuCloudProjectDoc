@@ -74,10 +74,12 @@ MuPacket Data 是由 MuPacket 实现者自行约定的结构
 ```typescript
 {
     // 服务器 ID，这通常是一个 8 位字符串
-    // 如非特别指定，这通常是以符合该正则 [A-Z0-9]{,8} 生成的随机字符串
+    // 如非特别指定，这通常是以符合该正则 [A-Z0-9]{8} 生成的随机字符串
     // 这通常是唯一值
     MS_ID: string
     MS_OP: {
+        // 与 MS_ID 相同
+        msid: string
         // 服务器名称（请注意这与服务器 ID 不是同一概念）
         name: string
         // 服务器的描述
@@ -106,6 +108,9 @@ MuPacket Data 是由 MuPacket 实现者自行约定的结构
 ```TypeScript
 [
     {
+        // 服务器 ID，这通常是一个 8 位字符串
+        // 这通常是唯一值
+        msid: string,
         // 服务器名称（请注意这与服务器 ID 不是同一概念）
         name: string,
         // 服务器的描述
@@ -134,7 +139,7 @@ MuPacket Data 是由 MuPacket 实现者自行约定的结构
 ```TypeScript
 {
     // 服务器 ID，这通常是一个 8 位字符串
-    // 如非特别指定，这通常是以符合该正则 [A-Z0-9]{,8} 生成的随机字符串
+    // 如非特别指定，这通常是以符合该正则 [A-Z0-9]{8} 生成的随机字符串
     // 这通常是唯一值
     MS_ID: string
 
@@ -148,5 +153,110 @@ MuPacket Data 是由 MuPacket 实现者自行约定的结构
     // 6 -> 遇错重启中
     // 7 -> 服务器连续报告了错误，被强行停止
     MS_OP: number
+}
+```
+
+### mucore.muenv:info
+```TypeScript
+{
+    // 环境名
+    EV_NAME: string
+    EV_OP: {
+        // 环境名
+        EV_NAME: string
+        // 环境标识版本
+        // 注意这并非只有 Java 版本，它通常也会显示 OpenJDK 分支自有的版本号
+        EV_VER: string
+        // 字节码版本
+        // 这通常决定该环境
+        EV_CODE: number
+        // 环境位置（绝对路径）
+        EV_LOC: string
+    }
+}
+```
+
+### mucore.muenv:list
+```TypeScript
+[
+    {
+        // 环境名
+        EV_NAME: string,
+        // 环境标识版本
+        // 注意这并非只有 Java 版本，它通常也会显示 OpenJDK 分支自有的版本号
+        EV_VER: string,
+        // 字节码版本
+        // 这通常决定该环境
+        EV_CODE: number,
+        // 环境位置（绝对路径）
+        EV_LOC: string,
+    }
+]
+```
+
+### muview.muserver:create
+```TypeScript
+{
+    // 服务器信息
+    MSI: {
+        // 服务器 ID
+        // 可以是 undefined，若如此，则其会是一个符合该正则的随机字符串（[A-Z0-9]{8}）
+        msid: string | undefined
+        // 服务器名称（请注意这与服务器 ID 不是同一概念）
+        name: string
+        // 服务器的描述
+        desc: string
+        // 服务器的版本（是指该服务器的 Minecraft 版本）
+        version: string
+        // 服务器的类型（例如该服务器是 Paper 核心，那么服务器的类型即为 "paper"）
+        type: string
+        // 服务器所使用的环境名
+        env: string
+    }
+    
+    // 服务器启动设置
+    MSSC: {
+        // 分配的最小内存数（单位：M）
+        minMemory: number
+        // 分配的最大内存数（单位：M）
+        maxMemory: number
+        // 是否需要开启原生 GUI 界面，默认是不需要开启（False）
+        hasGui: boolean
+        // 高级：对 JVM 的参数
+        // 这通常是通过 MuView-MuServerCreator 选择的固定值，或用户自行决定的
+        jvmFlags: string
+    }
+}
+```
+
+### muview.muserver:import
+```TypeScript
+{
+    // 服务器核心位置
+    LOC: string
+    
+    // 服务器启动设置
+    MSSC: {
+        // 分配的最小内存数（单位：M）
+        minMemory: number
+        // 分配的最大内存数（单位：M）
+        maxMemory: number
+        // 是否需要开启原生 GUI 界面，默认是不需要开启（False）
+        hasGui: boolean
+        // 高级：对 JVM 的参数
+        // 这通常是通过 MuView-MuServerCreator 选择的固定值，或用户自行决定的
+        jvmFlags: string
+    } 
+}
+```
+
+### muview.muenv:create
+```TypeScript
+{
+    // 环境名称
+    name: string
+    // 环境可执行文件位置
+    // 对于 Java 环境而言，应该对应 java.exe 文件
+    path: string
 }
 ```
